@@ -13,12 +13,12 @@ public class Elevator {
         if (floor > currentFloor) {
             for (int i = currentFloor; i < floor; i++) {
                 moveUp();
-                System.out.println("Этаж: " + (i + 1));
+                System.out.println("Этаж: " + getCurrentFloor());
             }
         } else if (floor < currentFloor) {
             for (int i = currentFloor; i > floor; i--) {
                 moveDown();
-                System.out.println("Этаж: " + (i - 1));
+                System.out.println("Этаж: " + getCurrentFloor());
             }
         }
     }
